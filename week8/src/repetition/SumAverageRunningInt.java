@@ -10,7 +10,7 @@ public class SumAverageRunningInt {
 	int lowerbound = 1;
 	int upperbound = 100;
 	
-	for(int number=lowerbound;number<=upperbound;number++) {
+	for(int number=lowerbound;number<=upperbound;++number) {
 		sum=number+sum;
 		
 	}
@@ -29,7 +29,7 @@ System.out.println("");
 	
 	while( number1<=upperbound1) {
 		sum1=sum1+number1;
-		number1++;
+	++number1;
 	}
 	System.out.println("The sum of 1 to 100 is "+ sum1);
 	average1=(double)sum1/((upperbound1-lowerbound1)+1);	
@@ -46,7 +46,7 @@ System.out.println("");
 	
 	do {
 		sum2=sum2+number2;
-		number2++;
+		++number2;
 	}while( number2<=upperbound2);
 		
 	System.out.println("The sum of 1 to 100 is "+ sum2);
